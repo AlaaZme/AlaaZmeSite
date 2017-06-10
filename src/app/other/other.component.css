@@ -1,0 +1,41 @@
+.body{
+    width:35%;
+    height:75%;
+    float:left;
+    margin-bottom:20px;
+}
+
+.navBar{
+background:black;
+width:12%;
+ list-style-type: none;
+ padding:10px;
+position:fixed;
+left:20px;
+ margin-left:20px;
+z-index:0;
+ -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+.navItm{
+  width:90%;
+z-index:1;
+    background:#ADFF2F;
+height:30px;
+margin:10px;
+margin-bottom:20px;
+text-align: center;
+padding-top:7px;
+ -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+
+}
+.navItm:hover{
+    background:	#666600;
+    color:white;
+     -webkit-box-shadow: inset 0px 0px 0px white, 0px 0px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 0px 01px white, 0px 0px 0px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 0px 0px white, 0px 0px 0px rgba(0,0,0,0.5);
+}

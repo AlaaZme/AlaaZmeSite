@@ -1,20 +1,54 @@
-<!--The whole content below can be removed with the new code.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=" />
+
+<div class="stickymain">
+ 
+<h1>
+  <img  (click)="edit()" class="micon" src="assets/vvv.png"  >  
+ {{title}}
+   <img  (click)="aboutCl()" class="aicon" src="assets/about.png"  >
+</h1>
+<div>
+<span *ngIf="edited()">
+<app-other></app-other>
+</span>
+<span *ngIf="about()">
+ <app-about></app-about>
+</span>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/docs/ts/latest/tutorial/">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
-  </li>
-</ul>
+
+</div>
+
+<div class="hdr" id="hdr" style="background-image:url('assets/bg2.jpg');">
+ <ul class="login" >
+     Comin Soon
+    <li class="lgnitm"> <input type="text" class="lginp" placeholder="username"/></li> 
+   <li class="lgnitm"> <input type="text" class="lginp" placeholder="password"/></li>
+
+    </ul>
+<img class="icn" src="assets/cons.png"  ><p><img class="picMe" src="assets/ccc.png"><span class="span"> AlaaZme ltd. </span></p>
+<h2>Welcome to my site pick an operation 
+ to procced to the desired location.<br>
+ All content owned by me (AlaaZme) 
+ please avoid copy fragment violation<br>
+ for your own safty
+  </h2>
+
+
+<ul class="list">
+<li  class="prod" (click)="goTo('#games')" > Games </li>
+  <li  class="prod"  (click)="goTo('#main-ftr')" >Featred</li>
+  <li  class="prod"  (click)="goTo('#mobile')" >Mobile</li>
+     <li class="prod"  (click)="goTo('#java')" >  Java </li>
+     <li class="prod"  (click)="goTo('#websites')"   >  webSites </li>
+  </ul>
+
+
+   <img  class="toTop" (click)="goTo('#hdr')"  src="assets/totop.png"  >
+
+
+   <app-mobile> </app-mobile> 
+  <app-main-ftr> </app-main-ftr> 
+  <app-games> </app-games> 
+<app-java> </app-java> 
+<app-websites> </app-websites> 
+<app-footer></app-footer>
 

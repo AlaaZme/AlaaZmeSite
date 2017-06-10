@@ -1,0 +1,35 @@
+body{
+
+ border:2px solid black;
+  background:#d6ff97;
+  margin-bottom:100px;
+  -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+.p{
+    font-size:28px;
+    padding:5px;
+     width:100%;
+     text-align: center;
+         background:#ADFF2F ;
+          text-shadow: 0px 0px 4px black, 0 3px 5px black, 0 0px 5px white;
+        z-index:-1;
+}
+p{
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+}
+.picMe{
+
+
+    margin-left:5%;
+    margin-top:10px;
+width:40%;
+height:50%;
+    border:1px solid black;
+     -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
